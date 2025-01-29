@@ -1,15 +1,15 @@
-// Load the dotenv package
+// Loading the dotenv paackage
 require('dotenv').config();
 
-// Access environment variables
+// working with environment variable
 const config = {
-  apiKey: process.env.API_KEY,
-  serverSecret: process.env.SERVER_SECRET,
+  apiKey: process.env.API_KEY,  //api cdoe
+  serverSecret: process.env.SERVER_SECRET,  //server code
   isKalvian: process.env.IS_KALVIAN === 'true',
 };
 
-// Export the config object
+// Exporting the config object
 module.exports = config;
 
-// Log the variables (Optional for testing)
+// this for checking
 console.log(config);
